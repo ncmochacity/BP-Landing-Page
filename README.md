@@ -29,4 +29,5 @@ This app is mobile-responsive and user-friendly, in addition to being tested aga
 How to use this app
 Clone the repo in the Command Line
 git clone git@github.com:ncmochacity/BP-Landing-Page.git
+
 Download the repo in a zipped file at : https://github.com/ncmochacity/BP-Landing-Page and open the index.html in your browser
