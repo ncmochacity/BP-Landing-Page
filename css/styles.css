@@ -128,6 +128,13 @@ body{
   padding:0;
   text-align:center;
 }
+#message-hide{
+  display:none;
+}
+#message-hide h1{
+  text-align:center;
+  font-weight:500;
+}
 /* footer styles */
 .footer-wrapper{
   background-color:#ff3860;

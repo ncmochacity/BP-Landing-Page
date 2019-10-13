@@ -1,19 +1,21 @@
 $(document).ready(function(){
+  $("#message-hide").hide();
   $(".selection").click(function(){
-    var myID = $(this).attr('id')
+    var myID = $(this).attr('id');
+    var msg = $("#message");
     alert("you clicked the selection: " + myID);
     //start AJAX Post request to post data to the server
 
     //end of post request
 
-    $.post("post.php", {
-      selection: myID
-    }, function(data,status){
-
-      $("#message").html("User selected this gift card: " + selection);
+    $.ajax({
+      type: "POST",
+      url: "post.php",
+      data: myID,
+      success:function(data){
+        msg.html(data);
+      }
     });
-    //end of AJAX post method
-
+    $("#message-hide").show();
   });
-  //end of click event for button selections
-});
+  });
